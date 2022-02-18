@@ -1,12 +1,27 @@
 "use strict";
 
 const colorInput = document.querySelector("#color_input");
+const harmonyInput = document.querySelector("#options");
 
 window.addEventListener("load", start);
 
 function start() {
   console.log("start");
+  //adder random farve?
+
+  //adder eventlisteners på vores valg
   colorInput.addEventListener("input", getUserColor);
+  harmonyInput.addEventListener("input", getUserHarmony);
+}
+
+//random color funktion
+function randomColor() {
+  let r = Math.floor(Math.random() * 255);
+  let g = Math.floor(Math.random() * 255);
+  let b = Math.floor(Math.random() * 255);
+
+  let randomgRgb = { r, g, b };
+  return randomgRgb;
 }
 
 //Getting a selected color from the user
@@ -20,6 +35,10 @@ function getUserColor() {
 
   //send the value of the selected color to function showUserColor with relevant parameters
   showUserColor(hexColorValue, rgbColorValue, cssColorValue, hslColorValue);
+}
+
+function getUserHarmony() {
+  let getHarmonyValue = harmonyInput.value;
 }
 
 //Showing a selected color
@@ -151,4 +170,5 @@ function showCssBox() {
   document.querySelector(".color_box").style.backgroundColor = colorInput.value;
 }
 
+function showColorArray() {}
 //Showing the color as a colored box in CSS
