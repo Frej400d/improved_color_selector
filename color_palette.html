@@ -11,13 +11,44 @@
 
 
     <body>
-    <div class="color_interface">
+      <h1>Welcome to our Color Palette Designer by Pizza Pigerne</h1>
+   <section id="chooser">
+     <div id="harmony_picker">  
+        <form>
+       
+          <select name="options" id="options">
+            <option value="Analogous">
+             Analogous
+            </option>
+            <option value="Monochromatic">
+              Monochromatic
+            </option>
+            <option value="Triad">
+           Triad
+            </option>
+            <option value="Complementary">
+              Complementary
+            </option>
+            <option value="Compound">
+              Compound
+            </option>
+            <option value="Shades">
+              Shades
+            </option>
+        </form>
+        </div>
+      <div class="color_picker">
       <div class="top">
         <p>Selected color:</p>
         <input type="color" id="color_input" />
       </div>
-      <div class="color_box"></div>
-      <div class="hex_color">
+      </section>
+   
+<section id="color_boxes">
+<article>
+ <div  id="color_box_1"></div>
+<div class="info_box_1">
+    <div class="hex_color">
         <p>HEX:</p>
         <p id="hex_color_value"></p>
       </div>
@@ -29,13 +60,84 @@
         <p>HSL:</p>
         <p id="hsl_color_value"></p>
       </div>
-        <div class="css_color">
-        <p>CSS:</p>
-        <p id="css_color_value"></p>
-         <div class="css_color">
-         </div>
-    </div>
+  </div>
 
+</article>
+
+<article>
+ <div id="color_box_2"></div>
+<div class="info_box_2">
+    <div class="hex_color">
+        <p>HEX:</p>
+        <p id="hex_color_value"></p>
+      </div>
+      <div class="rgb_color">
+        <p>RGB:</p>
+        <p id="rgb_color_value"></p>
+      </div>
+      <div class="hsl_color">
+        <p>HSL:</p>
+        <p id="hsl_color_value"></p>
+      </div>
+  </div>
+
+</article>
+
+<article>
+ <div  id="color_box_main" ></div>
+<div class="info_box_main">
+    <div class="hex_color">
+        <p>HEX:</p>
+        <p id="hex_color_value"></p>
+      </div>
+      <div class="rgb_color">
+        <p>RGB:</p>
+        <p id="rgb_color_value"></p>
+      </div>
+      <div class="hsl_color">
+        <p>HSL:</p>
+        <p id="hsl_color_value"></p>
+      </div>
+  </div>
+
+</article>
+
+<article>
+ <div id="color_box_3"></div>
+<div class="info_box_3">
+    <div class="hex_color">
+        <p>HEX:</p>
+        <p id="hex_color_value"></p>
+      </div>
+      <div class="rgb_color">
+        <p>RGB:</p>
+        <p id="rgb_color_value"></p>
+      </div>
+      <div class="hsl_color">
+        <p>HSL:</p>
+        <p id="hsl_color_value"></p>
+      </div>
+  </div>
+</article>
+
+<article>
+ <div  id="color_box_4"></div>
+<div class="info_box_4">
+    <div class="hex_color">
+        <p>HEX:</p>
+        <p id="hex_color_value"></p>
+      </div>
+      <div class="rgb_color">
+        <p>RGB:</p>
+        <p id="rgb_color_value"></p>
+      </div>
+      <div class="hsl_color">
+        <p>HSL:</p>
+        <p id="hsl_color_value"></p>
+      </div>
+  </div>
+</article>
+</section>
   </body>
   <script src="color_palette.js".js"></script>
 </html>

@@ -150,3 +150,5 @@ function showCssColor(css) {
 function showCssBox() {
   document.querySelector(".color_box").style.backgroundColor = colorInput.value;
 }
+
+//Showing the color as a colored box in CSS

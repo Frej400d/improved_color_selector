@@ -1,4 +1,37 @@
-.color_box {
+h1 {
+  text-align: center;
+}
+
+#chooser {
+  display: flex;
+  justify-content: center;
+}
+
+#color_input {
+  height: 12vw;
+  width: 12vw;
+  border: none;
+  padding: 0%;
+}
+
+#color_input:hover {
+  cursor: url(pizza_cursor.png), auto;
+}
+
+#harmony_picker {
+}
+
+#color_box_1,
+#color_box_2,
+#color_box_main,
+#color_box_3,
+#color_box_4 {
   height: 10vw;
   width: 10vw;
+}
+
+#color_boxes {
+  margin: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
